@@ -1,0 +1,19 @@
+{
+  "name": "desafio_com_dio",
+  "version": "1.0.0",
+  "description": "Memory Game - Jogo da Memória",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests available\" && exit 0"
+  },
+  "keywords": [
+    "game",
+    "memory",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
