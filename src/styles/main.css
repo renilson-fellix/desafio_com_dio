@@ -72,21 +72,42 @@ h2 {
   transition: 0.25s;
 }
 
-.item::after{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: #404040;
-    transition: 0.25s;
-    transform: rotateY(0deg);
-    backface-visibility: hidden;
+.item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #404040;
+  transition: 0.25s;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
 }
 
-.item.boxOpen{
-    transform: rotateY(0deg);
+.item.boxOpen {
+  transform: rotateY(0deg);
 }
 
 .boxOpen::after,
 .boxMatch::after {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 360px) and (max-width: 1040px) {
+  .item {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+  }
+
+  .container {
+    padding: 10px 30px;
+  }
+
+  .game {
+    width: 230px;
+    height: 230px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
 }
